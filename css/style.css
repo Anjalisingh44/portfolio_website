@@ -38,10 +38,13 @@
 }
 .left-container, .right-container{
     height:100vh ;
+    display: flex;
+    align-items:center;
 }
 .left-container{
     background: #262525;
     width:70% ;
+    padding-left:3rem ;
     
 
 }
@@ -49,4 +52,62 @@
     background:#3877FF ;
     width:30%
 
+}
+.icons .fa-brands{
+    color: aliceblue;
+    font-size:1.7rem;
+
+}
+.icons{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:2.5rem;
+}
+.content{
+    margin-left:4rem;
+}
+
+.content .intro{
+    font-size:1.5rem;
+    color: antiquewhite;
+}
+.content .intro span{
+    color:#5DB9EE;
+}
+.content h1{
+    font-size:3rem;
+    color:#5DB9EE;
+}
+.content .details{
+    font-size:1.1rem;
+    color: aliceblue;
+    max-width:40rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height:1.8rem;
+}
+.btn-containeer button{
+    border:.1rem solid #5DB9EE;
+    padding:.8rem 1.5rem;
+    border-radius:.5rem;
+    cursor:pointer;
+    transition: .5sec;
+}
+button:nth-child(1){
+    background:#5DB9EE;
+    color: #262525;
+}
+button:nth-child(2){
+    background:transparent;
+    color:#5DB9EE;
+    margin-left:2rem;
+}
+button:nth-child(1):hover{
+    background: transparent;
+    color: #5DB9EE;
+}
+button:nth-child(2):hover{
+    background:#5DB9EE;
+    color:#262525;
 }
