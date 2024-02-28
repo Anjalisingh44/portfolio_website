@@ -131,14 +131,19 @@ button:nth-child(2):hover{
 }
 .circle:nth-child(1) {
     background:linear-gradient(90deg,transparent 50%, #262525 50%);
-    width:38rem;
-    
+    width:38rem; 
 
 }
 .circle:nth-child(2){
-    width: 30rem;
-    background-image: url('images/profile.jpg');
+    width: 36rem;
+    background-image: url("../images/profile.jpg");
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    box-shadow: 0 0 1rem white;
 
+}
+#element{
+    font-size:2rem;
+    color:#3877FF;
 }
