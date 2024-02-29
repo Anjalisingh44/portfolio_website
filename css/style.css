@@ -64,6 +64,10 @@
     justify-content:center;
     align-items:center;
     gap:2.5rem;
+     
+}
+.icons a{
+    text-decoration: none;
 }
 .content{
     margin-left:4rem;
