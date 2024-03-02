@@ -151,3 +151,33 @@ button:nth-child(2):hover{
     font-size:2rem;
     color:#3877FF;
 }
+.container{
+    display: flex;
+}
+#about{
+    padding:0;
+    color:black;
+    display: flex;
+    max-width: 800px;
+    
+}
+.row{
+    display: flex;
+    justify-content:space-between;
+    
+    
+}
+.about-col-1{
+margin-right: 0;
+    margin-right: 1rem;
+
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+    
+    height: auto;
+}
+.about-col-2{
+   flex-basis: 65%; 
+}
