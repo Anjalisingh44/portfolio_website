@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
+        <script src="javascript/script.js"></script>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
                 <p class="details">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate modi sed aut amet
                     eligendi ut sunt illo asperiores esse nostrum.</p>
                 <div class="btn-containeer">
-                    <a><button>Hire Me</button></a>
+                    <a><button id="hireBtn">HireMe</button></a>
                     <button>View project</button>
                 </div>
             </div>
@@ -58,7 +58,40 @@
       loop:true,
     
     });
+    var hireButton = document.getElementById('hireBtn');
+
+// Add a click event listener to the button
+hireButton.addEventListener('click', function() {
+    // Set the download link
+    var downloadLink = 'https://github.com/Anjalisingh44/cv';
+
+    // Create a temporary anchor element
+    var tempAnchor = document.createElement('a');
+    tempAnchor.href = downloadLink;
+    tempAnchor.download = 'Anjali-Singh-cv%20(4).pdf'; // Set the desired file name
+
+    // Append the anchor to the document
+    document.body.appendChild(tempAnchor);
+
+    // Trigger a click event on the anchor to initiate the download
+    tempAnchor.click();
+
+    // Remove the anchor from the document (cleanup)
+    document.body.removeChild(tempAnchor);
+});
   </script>
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/profile.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1>About Me</h1>
+            </div>
+        </div>
+    </div>
+  </div>
 
     
 </body>

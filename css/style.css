@@ -153,10 +153,11 @@ button:nth-child(2):hover{
 }
 .container{
     display: flex;
+    
 }
 #about{
-    padding:0;
-    color:black;
+    padding: 60px 0;
+    
     display: flex;
     max-width: 800px;
     
@@ -164,20 +165,23 @@ button:nth-child(2):hover{
 .row{
     display: flex;
     justify-content:space-between;
+    flex: wrap;
+    
     
     
 }
 .about-col-1{
 margin-right: 0;
     margin-right: 1rem;
+    flex-basis: 35%;
 
 }
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
-    
+
     height: auto;
 }
 .about-col-2{
-   flex-basis: 65%; 
+   flex-basis: 60%; 
 }
