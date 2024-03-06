@@ -90,26 +90,26 @@ hireButton.addEventListener('click', function() {
                 <h1 class="sub-title">About Me</h1>
                 <p>Hello, I'm Anjali singh, a passionate web developer and designer. I love creating responsive and user-friendly websites that leave a lasting impression. With a strong background in front-end development and a keen eye for design, I strive to bring ideas to life through my work.</p>
 <div class="tab-title">
-    <p class="tab-links active-link">Skills</p>
-    <p class="tab-links">Experience</p>
-    <p class="tab-links">Education</p>
+    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+    <p class="tab-links" onclick="opentab('Education')">Education</p>
 
 </div>
-<div class="tab-contents active-tab">
+<div class="tab-contents active-tab" id="Skills">
     <ul>
         <li><span>JavaScript</span><br>Web developer</li>
         <li><span>React</span><br>Framework</li>
         <li><span>Node js</span><br>Backend</li>
     </ul>
 </div>
-<div class="tab-contents">
+<div class="tab-contents" id="Experience">
     <ul>
         <li><span>2020</span><br>Basic web framework</li>
         <li><span>2021</span><br>Internship</li>
         <li><span>2022</span><br>fresher</li>
     </ul>
 </div>
-<div class="tab-contents">
+<div class="tab-contents" id="Education">
     <ul>
         <li><span>Bsc Csit</span><br>Tribhuwan University</li>
         <li><span>High School</span><br>NEB</li>
@@ -120,7 +120,20 @@ hireButton.addEventListener('click', function() {
         </div>
     </div>
   </div>
-
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("avtive-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
     
 </body>
 
